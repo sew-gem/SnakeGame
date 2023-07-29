@@ -54,7 +54,7 @@ function update(){
     context.fillRect(0, 0, board.width, board.height);
 
     //update for food
-    context.fillStyle="red";
+    context.fillStyle="purple"; //change color of the
     context.fillRect(foodX, foodY, blockSize, blockSize);
     
     //when snake collide with food
@@ -72,7 +72,7 @@ function update(){
     }
 
     //update for snake
-    context.fillStyle="lime"; //color of snake
+    context.fillStyle="pink"; //color of snake
     snakeX += velocityX * blockSize;
     snakeY += velocityY * blockSize;
     context.fillRect(snakeX, snakeY, blockSize, blockSize); // snake size = 1 block size
@@ -99,8 +99,6 @@ function update(){
     }
 
 }
-
-
 
 //change direction of snacke
 function changeDirecion(e){
